@@ -22,5 +22,5 @@ router = routers.DefaultRouter()                      # add this
 router.register(r'todos', views.TodoView, 'todo')
 
 urlpatterns = [
-    path('admin/', admin.site.urls), path('api/', include(router.urls))  
+    path('', index, name='index'), path('admin/', admin.site.urls), path('api/', include(router.urls))  
 ]
